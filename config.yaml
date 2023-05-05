@@ -1,0 +1,36 @@
+baseURL: https://craig-shenton.github.io/govuk-hugo-test/
+languageCode: en-gb
+title: govuk-hugo-test
+theme: govukhugo
+publishDir: docs
+canonifyurls: true
+
+pygmentsUseClasses: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    style: github
+    tabWidth: 2
+
+
+params:
+  product: "Test of govuk-hugo"
+  logo: none
+  phase: alpha
+  feedbackurl: https://github.com/craig-shenton/govuk-hugo-demo/issues/
+  accessibility: accessibility.md
+  cookies: cookies.md
+  builtby: "craig-shenton"
+  builtbyurl: https://www.github.com/craig-shenton

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template "><head>
+  <meta charset="utf-8">
+  
+  
+  <title>govuk-hugo Demonstration | Use GOV.UK colours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+
+  
+  <link href="https://co-analysis.github.io/govuk-hugo-demo/css/govuk-frontend-4.0.0.min.css" rel="stylesheet">
+  
+
+  
+
+  <link href="https://co-analysis.github.io/govuk-hugo-demo/css/dashboard-layout.css" rel="stylesheet">
+
+  
+  <link href="https://co-analysis.github.io/govuk-hugo-demo/css/font-override.css" rel="stylesheet">
+  
+
+  
+  <link href="https://co-analysis.github.io/govuk-hugo-demo/css/syntax.css" rel="stylesheet">
+
+  
+
+  
+
+</head><body class="govuk-template__body js-enabled"><script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<header class="govuk-header " role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+
+        <div class="govuk-header__logo">
+            <a href="https://co-analysis.github.io/govuk-hugo-demo/" class="govuk-header__link govuk-header__link--homepage">
+
+                
+
+                
+                <span class="govuk-header__product-name">Demonstration and Documentation of govuk-hugo</span>
+                
+
+            </a>
+            <button class="mobile-nav-button govuk-button" id="mobile-nav-control">Menu ▼</button>
+        </div>
+
+    </div>
+</header>
+
+<div class="govuk-width-container">
+    
+<nav class="mobile-nav" id="mobile-nav">
+
+        
+        
+
+        
+
+        <ul class="govuk-list">
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/govuk-hugo-demo/docs/">Documentation</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/govuk-hugo-demo/tests/">Examples</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section nav-active-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/">R package documentation</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/build/">Build tools</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/filters/">Crosstalk filters</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/render_svg/">Image tools</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/govuk_datatable/">Interactive tables</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item nav-active-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state "
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/colours/">Use GOV.UK colours</a></li>
+                
+
+                
+
+                
+                
+
+                
+
+        </ul>
+
+        
+
+        <ul class="govuk-list nav-extra">
+
+                
+                <li class="nav-item nav-about"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/about/">About page</a></li>
+                
+
+                </a>
+
+        </ul>
+        
+
+</nav>
+</div>
+
+
+<div class="govuk-width-container">
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                alpha
+            </strong>
+            <span class="govuk-phase-banner__text">
+                This is a new service – your <a class="govuk-link" href="https://github.com/co-analysis/govuk-hugo-demo/issues/">feedback</a>
+                will
+                help us to improve it.
+            </span>
+        </p>
+    </div>
+</div>
+<div class="govuk-width-container ">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="dashboard-container" id="top">
+
+                <div class="dashboard-nav">
+<nav class="sidebar-nav">
+
+        
+        
+
+        
+
+        <ul class="govuk-list">
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/govuk-hugo-demo/docs/">Documentation</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/govuk-hugo-demo/tests/">Examples</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section nav-active-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/">R package documentation</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/build/">Build tools</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/filters/">Crosstalk filters</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/render_svg/">Image tools</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/govuk_datatable/">Interactive tables</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item nav-active-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state "
+                                href="https://co-analysis.github.io/govuk-hugo-demo/rpkg/colours/">Use GOV.UK colours</a></li>
+                
+
+                
+
+                
+                
+
+                
+
+        </ul>
+
+        
+
+        <ul class="govuk-list nav-extra">
+
+                
+                <li class="nav-item nav-about"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/govuk-hugo-demo/about/">About page</a></li>
+                
+
+                </a>
+
+        </ul>
+        
+
+</nav></div>
+                <div class="dashboard-content">
+
+
+<h1 class="govuk-heading-xl">Use GOV.UK colours</h1>
+
+
+<div class="govuk-body">
+
+    <p>Methods to access and use the GOV.UK design system <a href="https://design-system.service.gov.uk/styles/colour/" class="govuk-link"  target="_blank" rel="noreferrer noopener">colour palette</a> from within the <code>{govukhugo}</code> package. The GOV.UK design system includes a colour palette, these can be accessed via the <code>govuk_colours</code> vector, it includes both Sass variable colour names (e.g. govuk-text-colour) as well as the named colour palette. The GOV.UK colour scheme was not designed with data visualisation in mind. The <code>govuk_palette()</code> function provides an opinionated selection of GOV.UK colours for use in charts (e.g. via <code>ggplot2::scale_fill_manual()</code>).</p>
+<p>You should always think carefully about the colours you use in data visualisation and ensure your visualisation does not rely solely on colour to convey meaning. Depending on the nature of your visualisation it may be appropriate to use other colour scales, such as the <a href="https://colorbrewer2.org" class="govuk-link"  target="_blank" rel="noreferrer noopener">Color Brewer scales</a> by Cynthia Brewer (available in R through the <a href="https://cran.r-project.org/package=RColorBrewer" class="govuk-link"  target="_blank" rel="noreferrer noopener"><code>{RColorBrewer}</code></a> package).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="n">govuk_colours[</span><span class="s">&#34;blue&#34;</span><span class="n">]</span>
+
+<span class="nf">govuk_palette</span><span class="p">(</span><span class="s">&#34;categorical&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="arguments" class="govuk-heading-l">Arguments</h2>
+
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+  
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+    pal
+  </dt>
+  <dd class="govuk-summary-list__value">
+    One of <code>categorical</code> (the default), <code>blue</code>, <code>blrd</code>, <code>bldrd_dark</code>, <code>blyl</code>, <code>putq</code>, or a colour name from <code>govuk_colours</code>
+  </dd>
+</div>
+
+</dl>
+
+
+<h2 id="govuk_colours" class="govuk-heading-l">govuk_colours</h2>
+<p>The <code>govuk_colours</code> vector provides all of the colours listed in the Design System <a href="https://design-system.service.gov.uk/styles/colour/" class="govuk-link"  target="_blank" rel="noreferrer noopener">colour palettes documentation</a> colour palette, this includes both the palette colours and the Sass named variables (e.g. <code>govuk-text-colour</code>).</p>
+
+<h3 id="palette-colours" class="govuk-heading-m">Palette colours</h3>
+<ul>
+<li><code>red</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-red); display: inline-block; vertical-align: middle;"> </span> (#d4351c)</li>
+<li><code>yellow</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-yellow); display: inline-block; vertical-align: middle;"> </span> (#ffdd00)</li>
+<li><code>green</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-green); display: inline-block; vertical-align: middle;"> </span> (#00703c)</li>
+<li><code>blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-blue); display: inline-block; vertical-align: middle;"> </span> (#1d70b8)</li>
+<li><code>dark-blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-dark-blue); display: inline-block; vertical-align: middle;"> </span> (#003078)</li>
+<li><code>light-blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-light-blue); display: inline-block; vertical-align: middle;"> </span> (#5694ca)</li>
+<li><code>purple</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-purple); display: inline-block; vertical-align: middle;"> </span> (#4c2c92)</li>
+<li><code>black</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-black); display: inline-block; vertical-align: middle;"> </span> (#0b0c0c)</li>
+<li><code>dark-grey</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-dark-grey); display: inline-block; vertical-align: middle;"> </span> (#505a5f)</li>
+<li><code>mid-grey</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-mid-grey); display: inline-block; vertical-align: middle;"> </span> (#b1b4b6)</li>
+<li><code>light-grey</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-light-grey); display: inline-block; vertical-align: middle; border: 1px solid var(--govuk-colour-mid-grey)"> </span> (#f3f2f1)</li>
+<li><code>white</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-white); display: inline-block; vertical-align: middle; border: 1px solid var(--govuk-colour-mid-grey)"> </span> (#ffffff)</li>
+<li><code>light-purple</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-light-purple); display: inline-block; vertical-align: middle;"> </span> (#6f72af)</li>
+<li><code>bright-purple</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-bright-purple); display: inline-block; vertical-align: middle;"> </span> (#912b88)</li>
+<li><code>pink</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-pink); display: inline-block; vertical-align: middle;"> </span> (#d53880)</li>
+<li><code>light-pink</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-light-pink); display: inline-block; vertical-align: middle;"> </span> (#f499be)</li>
+<li><code>orange</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-orange); display: inline-block; vertical-align: middle;"> </span> (#f47738)</li>
+<li><code>brown</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-brown); display: inline-block; vertical-align: middle;"> </span> (#b58840)</li>
+<li><code>light-green</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-light-green); display: inline-block; vertical-align: middle;"> </span> (#85994b)</li>
+<li><code>turquoise</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-turquoise); display: inline-block; vertical-align: middle;"> </span> (#28a197)</li>
+<li><code>chart-white</code> <span style="width: 1.5em; height: 1.5em; background-color: #f9f8f8; display: inline-block; vertical-align: middle; border: 1px solid var(--govuk-colour-mid-grey)"> </span> (#f9f8f8)</li>
+</ul>
+<p>The <code>chart-white</code> colour is not a GOV.UK official palette colour but included in the palette to enable effective visualisation in charts, see <code>govuk_palette()</code> documentation below.</p>
+
+<h3 id="sass-variables" class="govuk-heading-m">Sass variables</h3>
+<ul>
+<li><code>govuk-text-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-text-colour); display: inline-block; vertical-align: middle;"> </span> (#0b0c0c)</li>
+<li><code>govuk-secondary-text-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-secondary-text-colour); display: inline-block; vertical-align: middle;"> </span> (#505a5f)</li>
+<li><code>govuk-link-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-link-colour); display: inline-block; vertical-align: middle;"> </span> (#1d70b8)</li>
+<li><code>govuk-link-hover-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-link-hover-colour); display: inline-block; vertical-align: middle;"> </span> (#003078)</li>
+<li><code>govuk-link-visited-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-link-visited-colour); display: inline-block; vertical-align: middle;"> </span> (#4c2c92)</li>
+<li><code>govuk-link-active-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-link-active-colour); display: inline-block; vertical-align: middle;"> </span> (#0b0c0c)</li>
+<li><code>govuk-border-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-border-colour); display: inline-block; vertical-align: middle;"> </span> (#b1b4b6)</li>
+<li><code>govuk-input-border-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-input-border-colour); display: inline-block; vertical-align: middle;"> </span> (#0b0c0c)</li>
+<li><code>govuk-focus-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-focus-colour); display: inline-block; vertical-align: middle;"> </span> (#ffdd00)</li>
+<li><code>govuk-focus-text-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-focus-text-colour); display: inline-block; vertical-align: middle;"> </span> (#0b0c0c)</li>
+<li><code>govuk-error-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-error-colour); display: inline-block; vertical-align: middle;"> </span> (#d4351c)</li>
+<li><code>govuk-success-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-success-colour); display: inline-block; vertical-align: middle;"> </span> (#00703c)</li>
+<li><code>govuk-brand-colour</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-brand-colour); display: inline-block; vertical-align: middle;"> </span> (#1d70b8)</li>
+</ul>
+
+<h2 id="govuk_palette" class="govuk-heading-l">govuk_palette</h2>
+<p>The <code>govuk_palette()</code> function provides an opinionated selection of GOV.UK colours for use in charts (e.g. via <code>ggplot2::scale_fill_manual()</code>). It has a single argument, <code>pal</code>, which must be one of <code>categorical</code>, <code>blues</code>, <code>blrd</code>, <code>blrd_dark</code>, <code>blyl</code>, <code>putq</code> or one of the names from the <code>govuk_colours</code> vector.</p>
+
+<h3 id="categorical-palette" class="govuk-heading-m">Categorical palette</h3>
+<p>The <code>categorical</code> palette provides a set of colours for displaying discrete categories where a distinction between the categories is valuable. It provides 6 colours:</p>
+<ul>
+<li><code>blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-blue); display: inline-block; vertical-align: middle;"> </span> (#1d70b8)</li>
+<li><code>orange</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-orange); display: inline-block; vertical-align: middle;"> </span> (#f47738)</li>
+<li><code>turquoise</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-turquoise); display: inline-block; vertical-align: middle;"> </span> (#28a197)</li>
+<li><code>bright-purple</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-bright-purple); display: inline-block; vertical-align: middle;"> </span> (#912b88)</li>
+<li><code>yellow</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-yellow); display: inline-block; vertical-align: middle;"> </span> (#ffdd00)</li>
+<li><code>dark-blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-dark-blue); display: inline-block; vertical-align: middle;"> </span> (#003078)</li>
+</ul>
+
+<h3 id="sequential-palettes" class="govuk-heading-m">Sequential palettes</h3>
+<p>The <code>blues</code> palette provides the three GOV.UK blues in sequential order from dark to light:</p>
+<ul>
+<li><code>dark-blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-dark-blue); display: inline-block; vertical-align: middle;"> </span> (#003078)</li>
+<li><code>blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-blue); display: inline-block; vertical-align: middle;"> </span> (#1d70b8)</li>
+<li><code>light-blue</code> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-light-blue); display: inline-block; vertical-align: middle;"> </span> (#5694ca)</li>
+</ul>
+<p>If you wish to use another GOV.UK for a sequential palette, supplying a name from <code>govuk_colours</code> as the <code>pal</code> argument will return two colours for use as end-points in a sequential palette, the original colour and a version of the colour that is roughly a third lighter. For example:</p>
+<ul>
+<li><code>govuk_palette(&quot;yellow&quot;)</code> returns <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-yellow); display: inline-block; vertical-align: middle;"> </span> (#ffdd00) and <span style="width: 1.5em; height: 1.5em; background-color: #ffeeb7; display: inline-block; vertical-align: middle;"> </span> (#ffeeb7)</li>
+<li><code>govuk_palette(&quot;green&quot;)</code> returns <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-green); display: inline-block; vertical-align: middle;"> </span> (#00703c) and <span style="width: 1.5em; height: 1.5em; background-color: #aecab5; display: inline-block; vertical-align: middle;"> </span> (#aecab5)</li>
+</ul>
+
+<h3 id="divergent-palettes" class="govuk-heading-m">Divergent palettes</h3>
+<p>There are four palettes for use in divergent colour scales, using <code>chart-white</code> as their mid-point:</p>
+<ul>
+<li><code>blrd</code> which uses GOV.UK blue and red as its end-points: <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-blue); display: inline-block; vertical-align: middle;"> </span> <span style="width: 1.5em; height: 1.5em; background-color: #f9f8f8; display: inline-block; vertical-align: middle; border: 1px solid var(--govuk-colour-mid-grey)"> </span> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-red); display: inline-block; vertical-align: middle;"> </span></li>
+<li><code>blrd_dark</code> which uses GOV.UK dark blue as its blue end-point and a darker red of the same hue as GOV.UK red as its red end-point: <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-dark-blue); display: inline-block; vertical-align: middle;"> </span> <span style="width: 1.5em; height: 1.5em; background-color: #f9f8f8; display: inline-block; vertical-align: middle; border: 1px solid var(--govuk-colour-mid-grey)"> </span> <span style="width: 1.5em; height: 1.5em; background-color: #a12815; display: inline-block; vertical-align: middle;"> </span></li>
+<li><code>blyl</code> which uses GOV.UK blue and yellow as its end-points: <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-blue); display: inline-block; vertical-align: middle;"> </span> <span style="width: 1.5em; height: 1.5em; background-color: #f9f8f8; display: inline-block; vertical-align: middle; border: 1px solid var(--govuk-colour-mid-grey)"> </span> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-yellow); display: inline-block; vertical-align: middle;"> </span></li>
+<li><code>putq</code> which uses GOV.UK purple and turquoise as its end-points: <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-purple); display: inline-block; vertical-align: middle;"> </span> <span style="width: 1.5em; height: 1.5em; background-color: #f9f8f8; display: inline-block; vertical-align: middle; border: 1px solid var(--govuk-colour-mid-grey)"> </span> <span style="width: 1.5em; height: 1.5em; background-color: var(--govuk-colour-turquoise); display: inline-block; vertical-align: middle;"> </span></li>
+</ul>
+
+
+</div>
+
+
+
+                </div>
+            </div>
+            <div id="scroll-back">
+                <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#top">
+                    <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg"
+                        width="13" height="17" viewBox="0 0 13 17">
+                        <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+                    </svg>Back to top
+                </a>
+            </div>
+        </main>
+    </div><footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+        <div class="govuk-footer__meta">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+                <h2 class="govuk-visually-hidden">Support links</h2>
+                <ul class="govuk-footer__inline-list">
+
+                    
+
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/govuk-hugo-demo/accessibility/">
+                            Accessibility
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/govuk-hugo-demo/cookies/">
+                            Cookies
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        Built by <a class="govuk-footer__link" href="https://www.github.com/co-analysis">
+                            Cabinet Office Analysis &amp; Insight
+                        </a>
+                    </li>
+                    
+
+                </ul>
+
+                <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                    <path fill="currentColor"
+                        d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+                </svg>
+                <span class="govuk-footer__licence-description">
+                    All content is available under the
+                    <a class="govuk-footer__link"
+                        href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                        rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                </span>
+            </div>
+            <div class="govuk-footer__meta-item">
+                <a style="background-image:url(https://co-analysis.github.io/govuk-hugo-demo/assets/images/govuk-crest.png);"
+                    class="govuk-footer__link govuk-footer__copyright-logo"
+                    href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">©
+                    Crown copyright </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+
+    function applyGOVUK(tag, govuk_class) {
+        var elements = document.querySelector("div.dashboard-content").getElementsByTagName(tag)
+
+        var i;
+        for (i = 0; i < elements.length; i++) {
+            if (elements[i].classList.contains("lntable") || elements[i].classList.contains("lntd")) {
+                null;
+            } else if (tag == "P" && (elements[i].classList.contains("govuk-body-l") || elements[i].classList.contains("govuk-body-s"))) {
+                null;
+            } else if (tag == "HR" && (elements[i].classList.contains("govuk-section-break"))) {
+                null;
+            } else {
+                elements[i].classList.add(govuk_class);
+            }
+
+        };
+
+    };
+
+     
+    applyGOVUK("P", "govuk-body");
+
+     
+    applyGOVUK("TABLE", "govuk-table");
+    applyGOVUK("CAPTION", "govuk-table__caption");
+    applyGOVUK("CAPTION", "govuk-table__caption--m");
+    applyGOVUK("TR", "govuk-table__row");
+    applyGOVUK("TD", "govuk-table__cell");
+    applyGOVUK("THEAD", "govuk-table__head");
+    applyGOVUK("TH", "govuk-table__header");
+
+     
+    applyGOVUK("BLOCKQUOTE", "govuk-inset-text");
+    applyGOVUK("STRONG", "govuk-!-font-weight-bold");
+    applyGOVUK("B", "govuk-!-font-weight-bold");
+
+     
+    applyGOVUK("UL", "govuk-list");
+    applyGOVUK("UL", "govuk-list--bullet");
+    applyGOVUK("OL", "govuk-list");
+    applyGOVUK("OL", "govuk-list--number");
+
+     
+    applyGOVUK("HR", "govuk-section-break--l");
+    applyGOVUK("HR", "govuk-section-break");
+
+     
+    function styleCodeBlocks() {
+        var code_elements = document.querySelectorAll("div.highlight")
+        var i;
+
+        for (i = 0; i < code_elements.length; i++) {
+            code_elements[i].classList.add("govuk-body");
+        };
+    };
+    styleCodeBlocks();
+
+     
+    function restyleTOC() {
+
+        var toc_elements = document.querySelectorAll("#page_toc #TableOfContents ul")
+
+        var i;
+
+        for (i = 0; i < toc_elements.length; i++) {
+            toc_elements[i].classList.remove("govuk-list");
+            toc_elements[i].classList.remove("govuk-list--bullet");
+            toc_elements[i].classList.add("toc-list");
+
+        };
+
+        var toc_links = document.querySelectorAll("#page_toc #TableOfContents a")
+
+        for (i = 0; i < toc_links.length; i++) {
+            toc_links[i].classList.add("toc-link");
+        };
+
+    };
+    restyleTOC();
+
+    
+
+    function scrollTop() {
+        if (window.innerWidth <= 768) {
+            document.getElementById("scroll-back").style.display = "none";
+        } else if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("scroll-back").style.display = "block";
+        } else {
+            document.getElementById("scroll-back").style.display = "none";
+        };
+    }
+
+    window.onscroll = function() { scrollTop() };
+
+    function mobileNav() {
+        var navState = document.getElementById("mobile-nav").style.display
+        if (navState == '' || navState == "none") {
+            document.getElementById("mobile-nav").style.display = "block";
+        } else {
+            document.getElementById("mobile-nav").style.display = "none";
+        }
+        console.log(navState)
+    }
+
+    document.getElementById("mobile-nav-control").onclick = function() { mobileNav() };
+
+</script>
+
+
+<script src="https://co-analysis.github.io/govuk-hugo-demo/js/govuk-frontend-4.0.0.min.js"></script>
+<script>
+    window.GOVUKFrontend.initAll()
+</script></body>
+
+</html>

@@ -1,0 +1,3 @@
+[submodule "themes/govukhugo"]
+	path = themes/govukhugo
+	url = https://github.com/craig-shenton/govukhugo.git
